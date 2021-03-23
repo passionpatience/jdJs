@@ -7,7 +7,7 @@ RUN set -ex \
         && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
         && echo "Asia/Shanghai" > /etc/timezone
 
-RUN git clone https://github.com/passionpatience/jd_scripts_job /scripts \
+RUN git clone https://github.com/passionpatience/jdJs /scripts \
         && cd /scripts \
         && mkdir logs \
         && npm install \
